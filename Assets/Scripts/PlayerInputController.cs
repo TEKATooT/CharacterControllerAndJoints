@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] float _moveSpeed;
+    [SerializeField] float _jumpForce;
 
     private Rigidbody _rigidbody;
     private PlayerInput _playerInput;
@@ -39,11 +40,13 @@ public class PlayerInputController : MonoBehaviour
     {
         Vector3 moveDirection = new Vector3(direction.x, 0, direction.y);
 
-        _rigidbody.AddForce(moveDirection.MoveToIsometric() * _moveSpeed);
+        moveDirection = moveDirection * _moveSpeed;
+
+        _rigidbody.AddForce(moveDirection.MoveToIsometric());
     }
 
     private void OnJump(InputAction.CallbackContext context)
     {
-        Debug.Log("GOGOGO");
+        _rigidbody.AddForce(0, _jumpForce, 0);
     }
 }
