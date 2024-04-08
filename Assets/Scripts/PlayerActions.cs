@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerInputController : MonoBehaviour
+public class PlayerActions : MonoBehaviour
 {
-    [SerializeField] float _moveSpeed;
-    [SerializeField] float _jumpForce;
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _jumpForce;
 
     private Rigidbody _rigidbody;
     private PlayerInput _playerInput;

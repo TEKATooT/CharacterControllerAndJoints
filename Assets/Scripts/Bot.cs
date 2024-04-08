@@ -3,8 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Bot : MonoBehaviour
 {
-    [SerializeField] Player _target;
-    [SerializeField] float _speed;
+    [SerializeField] private Player _target;
+    [SerializeField] private float _speed;
 
     private Rigidbody _rigidbody;
 
