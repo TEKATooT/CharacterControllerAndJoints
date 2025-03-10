@@ -272,6 +272,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 1.5
   _jumpForce: 100
+  _endMaterial: {fileID: 2100000, guid: f8c2624234a616d48bcbbb3ef0139160, type: 2}
+  _startMaterial: {fileID: 2100000, guid: 3c70a8f50dbad7f489d3c059a578e52f, type: 2}
 --- !u!114 &57672316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 57672316}
+  _endMaterial: {fileID: 2100000, guid: 3c70a8f50dbad7f489d3c059a578e52f, type: 2}
+  _startMaterial: {fileID: 2100000, guid: 7fb158d7a15fff742aaf81f31d0629cd, type: 2}
   _speed: 2
 --- !u!135 &835243876
 SphereCollider:

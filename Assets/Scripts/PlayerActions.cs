@@ -34,6 +34,8 @@ public class PlayerActions : MonoBehaviour
         Vector2 direction = _playerInput.Player.Move.ReadValue<Vector2>();
 
         OnMove(direction);
+
+        //UnInvisible();
     }
 
     private void OnMove(Vector2 direction)
@@ -48,5 +50,10 @@ public class PlayerActions : MonoBehaviour
     private void OnJump(InputAction.CallbackContext context)
     {
         _rigidbody.AddForce(0, _jumpForce, 0);
+    }
+
+    private void UnInvisible()
+    {
+
     }
 }
